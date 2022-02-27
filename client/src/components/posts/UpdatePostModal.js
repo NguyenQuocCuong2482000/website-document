@@ -91,8 +91,8 @@ const UpdatePostModal = () => {
 							<option value='TO LEARN'>TO LEARN</option>
 							<option value='LEARNING'>LEARNING</option>
 							<option value='LEARNED'>LEARNED</option>
-							<option value='LEARNED'>LEARNED BASIC KNOWLEDGE</option>
-							<option value='LEARNED'>LEARNED ADVANCED KNOWLEDGE</option>
+							{/*<option value='LEARNED'>LEARNED BASIC KNOWLEDGE</option>
+							<option value='LEARNED'>LEARNED ADVANCED KNOWLEDGE</option>*/}
 						</Form.Control>
 					</Form.Group>
 				</Modal.Body>

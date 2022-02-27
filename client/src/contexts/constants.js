@@ -1,7 +1,7 @@
 export const apiUrl =
 	process.env.NODE_ENV !== 'production'
 		? 'http://localhost:5000/api'
-		: 'https://nameless-fortress-92711.herokuapp.com/api'
+		: 'https://whispering-reef-85551.herokuapp.com/api'
 
 export const LOCAL_STORAGE_TOKEN_NAME = 'learnit-mern'
 
