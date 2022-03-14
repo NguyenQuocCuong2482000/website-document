@@ -1,3 +1,8 @@
+
+.thanh_nav_1 {
+	background-color: white;
+}
+
 .landing {
 	position: relative;
 	background: url('./assets/landing.jpg') no-repeat center center/cover;
@@ -109,4 +114,18 @@ button.post-button.btn:active {
 /* Post title */
 .post-title {
 	margin-bottom: 0.5rem;
+}
+
+.btn1 {
+  flex: 1;
+  display: inline-block;
+  border: none;
+  background: #555;
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background: #666;
 }

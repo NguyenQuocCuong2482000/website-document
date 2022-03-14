@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import { AuthContext } from '../../contexts/AuthContext'
 import { useContext } from 'react'
 
+
 const NavbarMenu = () => {
 	const {
 		authState: {
@@ -27,7 +28,7 @@ const NavbarMenu = () => {
 					height='32'
 					className='mr-2'
 				/>
-				LearnIt
+				Tự Học Online
 			</Navbar.Brand>
 
 			<Navbar.Toggle aria-controls='basic-navbar-nav' // thanh navbar kiểu 3 đường sọc
@@ -40,20 +41,53 @@ const NavbarMenu = () => {
 						to='/dashboard'
 						as={Link}
 					>
-						Dashboard
+						Trang chủ
 					</Nav.Link>
+
+					<Nav.Link
+						className='font-weight-bolder text-white'
+						to='/about1'
+						as={Link}
+					>
+						Hỗ trợ 1
+					</Nav.Link>
+
 					<Nav.Link
 						className='font-weight-bolder text-white'
 						to='/about'
 						as={Link}
 					>
-						About
+						Hỗ trợ 2
+					</Nav.Link>
+
+					<Nav.Link
+						className='font-weight-bolder text-white'
+						to='/about'
+						as={Link}
+					>
+						Hỗ trợ 3
+					</Nav.Link>
+
+					<Nav.Link
+						className='font-weight-bolder text-white'
+						to='/about'
+						as={Link}
+					>
+						Hỗ trợ 4
+					</Nav.Link>
+
+					<Nav.Link
+						className='font-weight-bolder text-white'
+						to='/about'
+						as={Link}
+					>
+						Hỗ trợ
 					</Nav.Link>
 				</Nav>
 
 				<Nav>
 					<Nav.Link className='font-weight-bolder text-white' disabled>
-						Welcome {username}
+						Chào {username}
 					</Nav.Link>
 					<Button
 						variant='secondary'
