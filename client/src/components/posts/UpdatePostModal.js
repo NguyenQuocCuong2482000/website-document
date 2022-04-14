@@ -98,10 +98,10 @@ const UpdatePostModal = () => {
 				</Modal.Body>
 				<Modal.Footer>
 					<Button variant='secondary' onClick={closeDialog}>
-						Cancel
+						Thoát
 					</Button>
 					<Button variant='primary' type='submit'>
-						LearnIt!
+						Học!
 					</Button>
 				</Modal.Footer>
 			</Form>

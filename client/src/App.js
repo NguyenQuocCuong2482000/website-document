@@ -12,6 +12,8 @@ import Header from './components/Header'
 import Todos from './components/Todos'
 import React, { Fragment } from 'react';
 
+
+
 function App() {
   return (    //cho Router vào trong AuthContextProvide và PostContextProvider giúp nó nhận dược dữ liệu từ chúng
 	  <AuthContextProvider>
@@ -19,6 +21,7 @@ function App() {
 			  
 			  <Router> 
 			<Switch>
+				
 			<Route exact path='/' component={Landing} />
 			<Route
 				exact
@@ -36,7 +39,7 @@ function App() {
 			
 			</Switch>
   		</Router>
-
+			
 			<Fragment /*Fragment chức năng giống div */>   
 					<Header/>
 					<Todos />

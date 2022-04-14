@@ -62,14 +62,14 @@ const LoginForm = () => {
 					/>
 				</Form.Group>
 				<Button variant='success' type='submit'>
-					Login
+					Đăng nhập
 				</Button>
 			</Form>
 			<p>
-				Don't have an account?
+				
 				<Link to='/register'>
 					<Button variant='info' size='sm' className='ml-2'>
-						Register
+						Đăng ký
 					</Button>
 				</Link>
 			</p>

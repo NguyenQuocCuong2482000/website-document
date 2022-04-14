@@ -31,8 +31,8 @@ const Auth = ({ authRoute }) => {
         <div className="landing">
             <div className="dark-overlay">
                 <div className="landing-inner">
-                    <h1>LearnIt</h1>
-                    <h4>keep track of what you are learning</h4>
+                    <h1>Tài liệu</h1>
+                    <h4>Quản lý những gì mà bạn đăng học.</h4>
                     {body}
                 </div>
             </div>

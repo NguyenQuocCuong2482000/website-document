@@ -45,17 +45,17 @@ const Dashboard = () => {
 		body = (
 			<>
 				<Card className='text-center mx-5 my-5'>
-					<Card.Header as='h1'>Hi {username}</Card.Header>
+					<Card.Header as='h1'>Chào {username}</Card.Header>
 					<Card.Body>
-						<Card.Title>Welcome to LearnIt</Card.Title>
+						<Card.Title>Chào mừng bạn đến với nơi quản lí tài liệu của bạn!</Card.Title>
 						<Card.Text>
-							Click the button below to track your first skill to learn
+						Nhấp vào nút bên dưới để thêm kỹ năng đầu tiên bạn muốn học
 						</Card.Text>
 						<Button
 							variant='primary'
 							onClick={setShowAddPostModal.bind(this, true)}
 						>
-							LearnIt!
+							Học!
 						</Button>
 					</Card.Body>
 				</Card>

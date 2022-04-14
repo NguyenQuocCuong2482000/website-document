@@ -19,7 +19,7 @@ const NavbarMenu = () => {
 	const logout = () => logoutUser()
 
 	return (
-		<Navbar expand='lg' bg='primary' variant='dark' className='shadow'>
+		<Navbar expand='lg'  variant='dark' className='thanhnav1'>
 			<Navbar.Brand className='font-weight-bolder text-white'>
 				<img
 					src={learnItLogo}
@@ -37,47 +37,17 @@ const NavbarMenu = () => {
 			<Navbar.Collapse id='basic-navbar-nav'>
 				<Nav className='mr-auto'>
 					<Nav.Link
-						className='font-weight-bolder text-white'
+						className='font-weight-bolder'
 						to='/dashboard'
 						as={Link}
 					>
 						Trang chủ
 					</Nav.Link>
 
-					<Nav.Link
-						className='font-weight-bolder text-white'
-						to='/about1'
-						as={Link}
-					>
-						Hỗ trợ 1
-					</Nav.Link>
+					
 
 					<Nav.Link
-						className='font-weight-bolder text-white'
-						to='/about'
-						as={Link}
-					>
-						Hỗ trợ 2
-					</Nav.Link>
-
-					<Nav.Link
-						className='font-weight-bolder text-white'
-						to='/about'
-						as={Link}
-					>
-						Hỗ trợ 3
-					</Nav.Link>
-
-					<Nav.Link
-						className='font-weight-bolder text-white'
-						to='/about'
-						as={Link}
-					>
-						Hỗ trợ 4
-					</Nav.Link>
-
-					<Nav.Link
-						className='font-weight-bolder text-white'
+						className='font-weight-bolder'
 						to='/about'
 						as={Link}
 					>

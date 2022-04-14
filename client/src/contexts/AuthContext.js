@@ -16,13 +16,13 @@ const AuthContextProvider = ({children}) => {
     })
 
     // Authenticate user (Xác thực người dùng)
-    const loadUser = async () =>{
+    const loadUser = async () =>{  //muốn dùng await thì phải có async, nó khai báo một hàm bất đồng bộ 
         if (localStorage[LOCAL_STORAGE_TOKEN_NAME]) {
             setAuthToken(localStorage[LOCAL_STORAGE_TOKEN_NAME])
         }
 
         try { //xác thực với server
-            const response = await axios.get(`${apiUrl}/auth`)
+            const response = await axios.get(`${apiUrl}/auth`)  // await chờ dòng lệnh kết thúc
             if (response.data.success) {
                 dispatch({
                     type: 'SET_AUTH', 
@@ -50,9 +50,9 @@ const AuthContextProvider = ({children}) => {
 					response.data.accessToken
 				)
 
-			await loadUser()
+			await loadUser()    // await chờ loadUser
 
-			return response.data
+			return response.data  // sau khi load xong tra về dữ liệu
 		} catch (error) {
 			if (error.response.data) return error.response.data
 			else return { success: false, message: error.message }

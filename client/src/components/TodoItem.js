@@ -11,23 +11,26 @@ const TodoItem = props => {
     //style   : lưu ý style ở đây khác trong css nha
     //nó ko có dấu - và phải để trong '' thành dạng chuỗi
     const todoItemStyle = {
-        background: '#f4f4f4',
+        //background: '#4859a8',
         padding: '10px',
-        borderBottom: '1px #ccc dotted',
+        borderBottom: '1px #003300 dotted',
         textDecoration: todo.completed ? 'line-through' : 'none',
         marginBottom: '0px',
+        color: '#003300',
         
 
     }
 
     const deleteButtonStyle = {
-        background: '#0066FF',
+        background: '#3a498d',
         color: '#fff',
         border: 'none',
         padding: '5px 9px',
-        borderRadius: '50%',
+        borderRadius: '15%',
         cursor: 'pointer',
         float: 'right',
+        boxShadow: '2px 4px 8px 2px #272f54',
+        
     }
 
 
